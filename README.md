@@ -1,16 +1,15 @@
 # flutter_food_app
 
-A new Flutter project.
+Flutter UI for a Food App.
 
-## Getting Started
+- [Design](https://cdn.dribbble.com/users/1615584/screenshots/14132700/media/b51314060013c69de0e7563e73d38e10.jpg)
+- [GitHub](https://github.com/codingbbq/flutter_food_app)
 
-This project is a starting point for a Flutter application.
+## Live Stream
 
-A few resources to get you started if this is your first Flutter project:
+- [02 Oct 2020 - Live Stream] (https://youtu.be/NhzQ05id3Cg)
+In this stream, we get started with Placeholder widgets and try to get the Bottom Navigation working
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- [03 Oct 2020 - Live Stream] (https://youtu.be/IJySXoWdC8g)
+In this stream, we work our way through the Bottom Navigation, the App Bar and some of the UI elements such as Header and Tags
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
