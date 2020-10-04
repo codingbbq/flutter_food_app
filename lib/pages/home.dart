@@ -1,6 +1,9 @@
 // Food App Home Page
 
 import 'package:flutter/material.dart';
+import 'package:flutter_food_app/utils/HomePageTitle.dart';
+import 'package:flutter_food_app/utils/ListOfDishes.dart';
+import 'package:flutter_food_app/utils/SelectedDish.dart';
 import 'package:flutter_food_app/utils/tags.dart';
 
 class Home extends StatelessWidget {
@@ -27,17 +30,17 @@ class Home extends StatelessWidget {
       ),
       bottomNavigationBar: Container(
         padding: EdgeInsets.symmetric(
-          horizontal: 20.0,
+          horizontal: 35.0,
           vertical: 10.0,
         ),
         color: Colors.white,
         child: ClipRRect(
           clipBehavior: Clip.hardEdge,
-          borderRadius: BorderRadius.all(Radius.circular(30.0)),
+          borderRadius: BorderRadius.all(Radius.circular(35.0)),
           child: BottomNavigationBar(
             showSelectedLabels: false,
             showUnselectedLabels: false,
-            iconSize: 34,
+            iconSize: 25,
             selectedItemColor: Colors.white,
             unselectedItemColor: Colors.white,
             backgroundColor: Colors.black,
@@ -80,57 +83,25 @@ class Home extends StatelessWidget {
             children: [
               SizedBox(height: 10.0),
               // For Title and Subtitle
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    "Delicious Salads",
-                    style: TextStyle(
-                      fontSize: 30.0,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  Text(
-                    "We make fresh and healthy food",
-                    style: TextStyle(
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.normal,
-                    ),
-                  )
-                ],
-              ),
+              HomePageTitle(),
+
               SizedBox(height: 10.0),
               // For Tags
               Tags(),
 
               SizedBox(
-                height: 10.0,
+                height: 20.0,
               ),
 
               // For Dish of the Day
-              Placeholder(
-                fallbackHeight: 100,
-                color: Colors.yellow,
-              ),
+              SelectedDish(),
+
               SizedBox(
-                height: 10.0,
+                height: 20.0,
               ),
 
               // For Horizontal scrolling Menu items
-              Placeholder(
-                fallbackHeight: 100,
-                color: Colors.green,
-              ),
-
-              SizedBox(
-                height: 10.0,
-              ),
-
-              // For Floating Navigation Menu at bottom
-              Placeholder(
-                fallbackHeight: 50,
-                color: Colors.black,
-              )
+              ListOfDishes(),
             ],
           ),
         ),
