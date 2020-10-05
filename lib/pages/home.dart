@@ -90,14 +90,14 @@ class Home extends StatelessWidget {
               Tags(),
 
               SizedBox(
-                height: 20.0,
+                height: 15.0,
               ),
 
               // For Dish of the Day
               SelectedDish(),
 
               SizedBox(
-                height: 20.0,
+                height: 10.0,
               ),
 
               // For Horizontal scrolling Menu items

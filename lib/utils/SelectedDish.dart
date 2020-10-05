@@ -23,12 +23,12 @@ class SelectedDish extends StatelessWidget {
                   Text(
                     "Chicken Salaad",
                     style: TextStyle(
-                      fontSize: 20.0,
+                      fontSize: 18.0,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                   SizedBox(
-                    height: 10.0,
+                    height: 8.0,
                   ),
                   Text(
                     "Chicken and Avocado",
@@ -37,7 +37,7 @@ class SelectedDish extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 10.0,
+                    height: 8.0,
                   ),
                   Text(
                     r"$32.00",
@@ -63,8 +63,8 @@ class SelectedDish extends StatelessWidget {
           ),
         ),
         Container(
-          width: 150,
-          height: 150,
+          width: 130,
+          height: 130,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(150.0),
             color: Colors.green,
