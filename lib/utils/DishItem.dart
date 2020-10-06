@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_food_app/models/list_dish.dart';
 
 class DishItem extends StatelessWidget {
+  final ListOfDishes item;
+
+  const DishItem({Key key, @required this.item}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Stack(children: [
@@ -23,22 +28,22 @@ class DishItem extends StatelessWidget {
         child: Column(
           children: [
             Text(
-              "Mixed Salaad",
+              item.dishName,
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 18.0,
-              ),
-            ),
-            SizedBox(height: 5.0),
-            Text(
-              "Mix Vegitables",
-              style: TextStyle(
                 fontSize: 16.0,
               ),
             ),
             SizedBox(height: 5.0),
             Text(
-              r"$32.00",
+              item.dishDescription,
+              style: TextStyle(
+                fontSize: 14.0,
+              ),
+            ),
+            SizedBox(height: 5.0),
+            Text(
+              item.dishPrice,
               style: TextStyle(
                 fontSize: 18.0,
                 fontWeight: FontWeight.bold,
@@ -51,11 +56,12 @@ class DishItem extends StatelessWidget {
       // Image
       Positioned(
         top: 5.0,
-        left: 25.0,
+        left: 0.0,
+        right: 0.0,
         child: Container(
-          width: 100,
-          height: 100,
-          decoration: BoxDecoration(
+            width: 100,
+            height: 100,
+            decoration: BoxDecoration(
               color: Colors.orange,
               borderRadius: BorderRadius.circular(50.0),
               boxShadow: <BoxShadow>[
@@ -64,8 +70,11 @@ class DishItem extends StatelessWidget {
                   spreadRadius: 1.0,
                   color: Colors.grey[400],
                 )
-              ]),
-        ),
+              ],
+            ),
+            child: Image.asset(
+              item.dishImage,
+            )),
       ),
 
       Positioned(

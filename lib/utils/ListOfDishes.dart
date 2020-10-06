@@ -9,7 +9,7 @@ class ListOfDishes extends StatelessWidget {
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Row(
-          children: [for (var item in listofdishes) DishItem()],
+          children: [for (var item in listofdishes) DishItem(item: item)],
         ),
       ),
     );
