@@ -15,3 +15,8 @@ In this stream, we work our way through the Bottom Navigation, the App Bar and s
 
 - [04 Oct 2020 - Live Stream Part 1] (https://youtu.be/16S64QjlPyU)
 - [04 Oct 2020 - Live Stream Part 2] (https://youtu.be/MW6fqAzUCfQ)
+
+- [05 Oct 2020 - Live Stream] (https://youtu.be/MlnYsCdbfU8)
+
+- [06 Oct 2020 - Live Stream] (https://youtu.be/RWa0qi1oTTY)
+This was short stream due to technical issues was not able to load the android emulator properly. 
