@@ -20,3 +20,6 @@ In this stream, we work our way through the Bottom Navigation, the App Bar and s
 
 - [06 Oct 2020 - Live Stream] (https://youtu.be/RWa0qi1oTTY)
 This was short stream due to technical issues was not able to load the android emulator properly. 
+
+- [07 Oct 2020 - Live Stream] (https://youtu.be/jYKUwEtYXf4)
+In this stream, we get the images to display on the UI and start working on the Individual dish page.
