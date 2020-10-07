@@ -11,7 +11,8 @@ class DishItem extends StatelessWidget {
     return Stack(children: [
       Container(
         margin: EdgeInsets.only(
-          right: 20.0,
+          right: 30.0,
+          left: 20.0,
           top: 35.0,
           bottom: 20.0,
         ),
@@ -70,10 +71,13 @@ class DishItem extends StatelessWidget {
 
       Positioned(
         bottom: -10.0,
-        left: 50.0,
+        left: 0.0,
+        right: 0.0,
         child: IconButton(
           iconSize: 40.0,
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushNamed(context, "/dish");
+          },
           icon: Icon(
             Icons.add_circle,
             color: Colors.black,
