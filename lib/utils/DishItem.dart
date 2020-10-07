@@ -54,27 +54,18 @@ class DishItem extends StatelessWidget {
       ),
 
       // Image
-      Positioned(
-        top: 5.0,
-        left: 0.0,
-        right: 0.0,
-        child: Container(
-            width: 100,
-            height: 100,
-            decoration: BoxDecoration(
-              color: Colors.orange,
-              borderRadius: BorderRadius.circular(50.0),
-              boxShadow: <BoxShadow>[
-                BoxShadow(
-                  blurRadius: 6.0,
-                  spreadRadius: 1.0,
-                  color: Colors.grey[400],
-                )
-              ],
-            ),
+      Positioned.fill(
+        child: Align(
+          alignment: Alignment.topCenter,
+          child: Container(
+            width: 110,
+            height: 110,
             child: Image.asset(
               item.dishImage,
-            )),
+              fit: BoxFit.contain,
+            ),
+          ),
+        ),
       ),
 
       Positioned(

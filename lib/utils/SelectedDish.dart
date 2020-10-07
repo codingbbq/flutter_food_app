@@ -65,9 +65,8 @@ class SelectedDish extends StatelessWidget {
         Container(
           width: 130,
           height: 130,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(150.0),
-            color: Colors.green,
+          child: Image.asset(
+            "assets/images/01salaad.png",
           ),
         ),
       ],
