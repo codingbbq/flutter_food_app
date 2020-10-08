@@ -23,3 +23,6 @@ This was short stream due to technical issues was not able to load the android e
 
 - [07 Oct 2020 - Live Stream] (https://youtu.be/jYKUwEtYXf4)
 In this stream, we get the images to display on the UI and start working on the Individual dish page.
+
+- [08 Oct 2020 - Live Stream] (https://youtu.be/hwhOmd6j3Ho)
+In this stream, we work on the individual dish page. I learned about the Transform.rotate widget to rotate the shoping cart background.
