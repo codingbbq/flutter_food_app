@@ -51,58 +51,60 @@ class Home extends StatelessWidget {
                     Icons.home,
                     semanticLabel: "Home",
                   ),
-                  title: Text("Home")),
+                  label: "Home"),
               BottomNavigationBarItem(
                   icon: Icon(
                     Icons.account_balance_wallet,
                     semanticLabel: "Balance",
                   ),
-                  title: Text("Balance")),
+                  label: "Balance"),
               BottomNavigationBarItem(
                   icon: Icon(
                     Icons.chat,
                     semanticLabel: "Chat",
                   ),
-                  title: Text("Chat")),
+                  label: "Chat"),
               BottomNavigationBarItem(
                   icon: Icon(
                     Icons.person,
                     semanticLabel: "Profile",
                   ),
-                  title: Text("Profile"))
+                  label: "Profile")
             ],
           ),
         ),
       ),
       body: SafeArea(
-        child: Container(
-          padding: EdgeInsets.symmetric(horizontal: 15.0),
-          color: Colors.white,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              SizedBox(height: 10.0),
-              // For Title and Subtitle
-              HomePageTitle(),
+        child: SingleChildScrollView(
+          child: Container(
+            padding: EdgeInsets.symmetric(horizontal: 10.0),
+            color: Colors.white,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                SizedBox(height: 10.0),
+                // For Title and Subtitle
+                HomePageTitle(),
 
-              SizedBox(height: 10.0),
-              // For Tags
-              Tags(),
+                SizedBox(height: 10.0),
+                // For Tags
+                Tags(),
 
-              SizedBox(
-                height: 15.0,
-              ),
+                SizedBox(
+                  height: 15.0,
+                ),
 
-              // For Dish of the Day
-              SelectedDish(),
+                // For Dish of the Day
+                SelectedDish(),
 
-              SizedBox(
-                height: 10.0,
-              ),
+                SizedBox(
+                  height: 10.0,
+                ),
 
-              // For Horizontal scrolling Menu items
-              ListOfDishes(),
-            ],
+                // For Horizontal scrolling Menu items
+                ListOfDishes(),
+              ],
+            ),
           ),
         ),
       ),

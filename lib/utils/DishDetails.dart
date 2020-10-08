@@ -22,7 +22,7 @@ class DishDetails extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                "Quinoa Salaad",
+                "Quinoa Salad",
                 style: TextStyle(
                   fontSize: 20.0,
                   fontWeight: FontWeight.bold,

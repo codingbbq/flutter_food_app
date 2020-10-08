@@ -9,28 +9,28 @@ class ListOfDishes {
 }
 
 final ListOfDishes mixVeg = ListOfDishes(
-  dishName: "Mixed Salaad",
+  dishName: "Mixed Salad",
   dishDescription: "Mixed Vegitables",
   dishPrice: "32.0",
   dishImage: "assets/images/02salaad.png",
 );
 
 final ListOfDishes nonVeg = ListOfDishes(
-  dishName: "Chicken Salaad",
+  dishName: "Chicken Salad",
   dishDescription: "Chicken and Ham",
   dishPrice: "32.0",
   dishImage: "assets/images/03salaad.png",
 );
 
 final ListOfDishes quinoa = ListOfDishes(
-  dishName: "Quinoa Salaad",
+  dishName: "Quinoa Salad",
   dishDescription: "Spicy with garlic",
   dishPrice: "32.0",
   dishImage: "assets/images/03salaad.png",
 );
 
 final ListOfDishes tomatoSalaad = ListOfDishes(
-  dishName: "Tomato Salaad",
+  dishName: "Tomato Salad",
   dishDescription: "Tomato and Pepper",
   dishPrice: "32.0",
   dishImage: "assets/images/04salaad.png",
