@@ -26,3 +26,6 @@ In this stream, we get the images to display on the UI and start working on the 
 
 - [08 Oct 2020 - Live Stream] (https://youtu.be/hwhOmd6j3Ho)
 In this stream, we work on the individual dish page. I learned about the Transform.rotate widget to rotate the shoping cart background.
+
+- [09 Oct 2020 - Live Stream] (https://youtu.be/PUw-ocHQCcc)
+In this stream we create the UI for the notification text using the stack and the positioned widget.

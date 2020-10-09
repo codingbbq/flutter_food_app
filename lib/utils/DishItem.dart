@@ -76,7 +76,11 @@ class DishItem extends StatelessWidget {
         child: IconButton(
           iconSize: 40.0,
           onPressed: () {
-            Navigator.pushNamed(context, "/dish");
+            Navigator.pushNamed(
+              context,
+              "/dish",
+              arguments: item,
+            );
           },
           icon: Icon(
             Icons.add_circle,

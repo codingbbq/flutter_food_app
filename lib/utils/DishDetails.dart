@@ -167,10 +167,37 @@ class DishDetails extends StatelessWidget {
                   ),
                   child: Transform.rotate(
                     angle: -120.0,
-                    child: Icon(
-                      Icons.shopping_cart,
-                      color: Colors.white,
-                      size: 30.0,
+                    child: Stack(
+                      alignment: Alignment.center,
+                      children: [
+                        Icon(
+                          Icons.shopping_cart,
+                          color: Colors.white,
+                          size: 30.0,
+                        ),
+                        Positioned(
+                          top: 12.0,
+                          right: 15,
+                          child: Container(
+                            width: 20,
+                            height: 20,
+                            decoration: BoxDecoration(
+                              color: Colors.red[600],
+                              borderRadius: BorderRadius.circular(20.0),
+                            ),
+                            child: Align(
+                              alignment: Alignment.center,
+                              child: Text(
+                                "1",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          ),
+                        )
+                      ],
                     ),
                   ),
                 ),
