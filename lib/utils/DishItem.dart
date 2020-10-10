@@ -62,7 +62,7 @@ class DishItem extends StatelessWidget {
             width: 110,
             height: 110,
             child: Image.asset(
-              item.dishImage,
+              item.dishImage[0],
               fit: BoxFit.contain,
             ),
           ),

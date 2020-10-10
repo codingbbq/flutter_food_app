@@ -16,7 +16,10 @@ class FlutterFoodApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       initialRoute: '/',
-      routes: {'/': (context) => Home(), '/dish': (context) => Dish()},
+      routes: {
+        '/': (context) => Home(),
+        '/dish': (context) => Dish(),
+      },
     );
   }
 }

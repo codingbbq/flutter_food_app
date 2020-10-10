@@ -4,7 +4,7 @@ class ListOfDishes {
   final String dishDescription;
   final String dishDetailedDescription;
   final String dishPrice;
-  final String dishImage;
+  final List<String> dishImage;
   final String dishDeliveryTime;
 
   ListOfDishes({
@@ -25,7 +25,7 @@ final ListOfDishes mixVeg = ListOfDishes(
   dishDetailedDescription:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   dishPrice: "32.00",
-  dishImage: "assets/images/02salaad.png",
+  dishImage: ["assets/images/02salaad.png", "assets/images/01salaad.png"],
   dishDeliveryTime: "25 Min",
 );
 
@@ -36,7 +36,7 @@ final ListOfDishes nonVeg = ListOfDishes(
   dishDetailedDescription:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
   dishPrice: "24.00",
-  dishImage: "assets/images/03salaad.png",
+  dishImage: ["assets/images/01salaad.png", "assets/images/03salaad.png"],
   dishDeliveryTime: "10 Min",
 );
 
@@ -47,7 +47,7 @@ final ListOfDishes quinoa = ListOfDishes(
   dishDetailedDescription:
       "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   dishPrice: "18.00",
-  dishImage: "assets/images/03salaad.png",
+  dishImage: ["assets/images/01salaad.png", "assets/images/03salaad.png"],
   dishDeliveryTime: "40 Min",
 );
 
@@ -58,7 +58,7 @@ final ListOfDishes tomatoSalaad = ListOfDishes(
   dishDetailedDescription:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   dishPrice: "25.00",
-  dishImage: "assets/images/04salaad.png",
+  dishImage: ["assets/images/01salaad.png", "assets/images/04salaad.png"],
   dishDeliveryTime: "10 Min",
 );
 List<ListOfDishes> listofdishes = [mixVeg, nonVeg, quinoa, tomatoSalaad];

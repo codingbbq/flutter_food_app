@@ -1,7 +1,46 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_food_app/models/list_dish.dart';
 
-class DishDetails extends StatelessWidget {
+class DishDetails extends StatefulWidget {
+  @override
+  _DishDetailsState createState() => _DishDetailsState();
+}
+
+class _DishDetailsState extends State<DishDetails> {
+  int _currentPage = 0;
+
+  Timer _timer;
+
+  PageController _dishViewController = PageController(
+    initialPage: 0,
+  );
+
+  @override
+  void initState() {
+    super.initState();
+    _timer = new Timer.periodic(Duration(seconds: 3), (Timer timer) {
+      if (_currentPage < 1) {
+        _currentPage++;
+      } else {
+        _currentPage = 0;
+      }
+
+      _dishViewController.animateToPage(
+        _currentPage,
+        duration: Duration(milliseconds: 350),
+        curve: Curves.easeIn,
+      );
+    });
+  }
+
+  @override
+  void dispose() {
+    _timer.cancel();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     final ListOfDishes item = ModalRoute.of(context).settings.arguments;
@@ -14,6 +53,29 @@ class DishDetails extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          Container(
+            height: 280,
+            child: PageView.builder(
+              controller: _dishViewController,
+              itemCount: item.dishImage.length,
+              itemBuilder: (context, index) {
+                return Image.asset(
+                  item.dishImage[index],
+                  fit: BoxFit.contain,
+                );
+              },
+            ),
+          ),
+
+          SizedBox(
+            height: 10.0,
+          ),
+
+          // Page View Navigation
+          SizedBox(
+            height: 10.0,
+          ),
+
           Text(
             item.dishCategory,
             style: TextStyle(
