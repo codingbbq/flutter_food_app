@@ -7,25 +7,30 @@ Flutter UI for a Food App.
 
 ## Live Stream
 
-- [02 Oct 2020 - Live Stream] (https://youtu.be/NhzQ05id3Cg)
+- [02 Oct 2020 - Live Stream](https://youtu.be/NhzQ05id3Cg)
 In this stream, we get started with Placeholder widgets and try to get the Bottom Navigation working
 
-- [03 Oct 2020 - Live Stream] (https://youtu.be/IJySXoWdC8g)
+- [03 Oct 2020 - Live Stream](https://youtu.be/IJySXoWdC8g)
 In this stream, we work our way through the Bottom Navigation, the App Bar and some of the UI elements such as Header and Tags
 
-- [04 Oct 2020 - Live Stream Part 1] (https://youtu.be/16S64QjlPyU)
-- [04 Oct 2020 - Live Stream Part 2] (https://youtu.be/MW6fqAzUCfQ)
+- [04 Oct 2020 - Live Stream Part 1](https://youtu.be/16S64QjlPyU)
+- [04 Oct 2020 - Live Stream Part 2](https://youtu.be/MW6fqAzUCfQ)
 
-- [05 Oct 2020 - Live Stream] (https://youtu.be/MlnYsCdbfU8)
+- [05 Oct 2020 - Live Stream](https://youtu.be/MlnYsCdbfU8)
 
-- [06 Oct 2020 - Live Stream] (https://youtu.be/RWa0qi1oTTY)
+- [06 Oct 2020 - Live Stream](https://youtu.be/RWa0qi1oTTY)
 This was short stream due to technical issues was not able to load the android emulator properly. 
 
-- [07 Oct 2020 - Live Stream] (https://youtu.be/jYKUwEtYXf4)
+- [07 Oct 2020 - Live Stream](https://youtu.be/jYKUwEtYXf4)
 In this stream, we get the images to display on the UI and start working on the Individual dish page.
 
-- [08 Oct 2020 - Live Stream] (https://youtu.be/hwhOmd6j3Ho)
+- [08 Oct 2020 - Live Stream](https://youtu.be/hwhOmd6j3Ho)
 In this stream, we work on the individual dish page. I learned about the Transform.rotate widget to rotate the shoping cart background.
 
-- [09 Oct 2020 - Live Stream] (https://youtu.be/PUw-ocHQCcc)
+- [09 Oct 2020 - Live Stream](https://youtu.be/PUw-ocHQCcc)
 In this stream we create the UI for the notification text using the stack and the positioned widget.
+
+- [10 Oct 2020 - Live Stream](https://youtu.be/zL8UqEYLmUc)
+This is the final stream where we use the pageView widget to get the carousel working. I wanted to learn and use the automatic page transition in the carousel.
+
+You can watch the [short video](https://youtu.be/SF_GqaWJP08) about the UI in my Flutter UI challenge series on youtube. You can [view the playlist here](https://www.youtube.com/playlist?list=PLXhGtHdNMDkm4CNGIHi09_eSGgpF_CXD6).
