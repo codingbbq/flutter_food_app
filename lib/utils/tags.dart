@@ -19,7 +19,7 @@ class Tags extends StatelessWidget {
               color: Colors.black,
             ),
             child: Text(
-              "Salaads",
+              "Salads",
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 18.0,

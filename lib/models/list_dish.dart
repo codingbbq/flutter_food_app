@@ -20,7 +20,7 @@ class ListOfDishes {
 
 final ListOfDishes mixVeg = ListOfDishes(
   dishCategory: "Continental",
-  dishName: "Mixed Salaad",
+  dishName: "Mixed Salad",
   dishDescription: "Mixed Vegitables",
   dishDetailedDescription:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -31,7 +31,7 @@ final ListOfDishes mixVeg = ListOfDishes(
 
 final ListOfDishes nonVeg = ListOfDishes(
   dishCategory: "Italian",
-  dishName: "Chicken Salaad",
+  dishName: "Chicken Salad",
   dishDescription: "Chicken and Ham",
   dishDetailedDescription:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
@@ -42,7 +42,7 @@ final ListOfDishes nonVeg = ListOfDishes(
 
 final ListOfDishes quinoa = ListOfDishes(
   dishCategory: "Mediterrian",
-  dishName: "Quinoa Salaad",
+  dishName: "Quinoa Salad",
   dishDescription: "Spicy with garlic",
   dishDetailedDescription:
       "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -53,7 +53,7 @@ final ListOfDishes quinoa = ListOfDishes(
 
 final ListOfDishes tomatoSalaad = ListOfDishes(
   dishCategory: "South Indian",
-  dishName: "Tomato Salaad",
+  dishName: "Tomato Salad",
   dishDescription: "Tomato and Pepper",
   dishDetailedDescription:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",

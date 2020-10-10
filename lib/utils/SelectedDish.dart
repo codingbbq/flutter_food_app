@@ -21,7 +21,7 @@ class SelectedDish extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Chicken Salaad",
+                    "Chicken Salad",
                     style: TextStyle(
                       fontSize: 18.0,
                       fontWeight: FontWeight.bold,
