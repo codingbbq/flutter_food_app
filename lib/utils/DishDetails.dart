@@ -1,8 +1,50 @@
-import 'package:flutter/material.dart';
+import 'dart:async';
 
-class DishDetails extends StatelessWidget {
+import 'package:flutter/material.dart';
+import 'package:flutter_food_app/models/list_dish.dart';
+
+class DishDetails extends StatefulWidget {
+  @override
+  _DishDetailsState createState() => _DishDetailsState();
+}
+
+class _DishDetailsState extends State<DishDetails> {
+  int _currentPage = 0;
+
+  Timer _timer;
+
+  PageController _dishViewController = PageController(
+    initialPage: 0,
+  );
+
+  @override
+  void initState() {
+    super.initState();
+    _timer = new Timer.periodic(Duration(seconds: 3), (Timer timer) {
+      if (_currentPage < 1) {
+        _currentPage++;
+      } else {
+        _currentPage = 0;
+      }
+
+      _dishViewController.animateToPage(
+        _currentPage,
+        duration: Duration(milliseconds: 350),
+        curve: Curves.easeIn,
+      );
+    });
+  }
+
+  @override
+  void dispose() {
+    _timer.cancel();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
+    final ListOfDishes item = ModalRoute.of(context).settings.arguments;
+
     return Container(
       padding: EdgeInsets.only(
         left: 20.0,
@@ -11,8 +53,31 @@ class DishDetails extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          Container(
+            height: 280,
+            child: PageView.builder(
+              controller: _dishViewController,
+              itemCount: item.dishImage.length,
+              itemBuilder: (context, index) {
+                return Image.asset(
+                  item.dishImage[index],
+                  fit: BoxFit.contain,
+                );
+              },
+            ),
+          ),
+
+          SizedBox(
+            height: 10.0,
+          ),
+
+          // Page View Navigation
+          SizedBox(
+            height: 10.0,
+          ),
+
           Text(
-            "Mediterranean",
+            item.dishCategory,
             style: TextStyle(
               fontSize: 14.0,
               fontWeight: FontWeight.bold,
@@ -22,7 +87,7 @@ class DishDetails extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                "Quinoa Salad",
+                item.dishName,
                 style: TextStyle(
                   fontSize: 20.0,
                   fontWeight: FontWeight.bold,
@@ -86,7 +151,7 @@ class DishDetails extends StatelessWidget {
 
           // Salaad description
           Text(
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
+            item.dishDetailedDescription,
             style: TextStyle(
               fontSize: 16.0,
               color: Colors.grey[700],
@@ -118,7 +183,7 @@ class DishDetails extends StatelessWidget {
                 width: 10.0,
               ),
               Text(
-                "25 Mins",
+                item.dishDeliveryTime,
                 style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.bold,
@@ -145,7 +210,7 @@ class DishDetails extends StatelessWidget {
                     height: 5.0,
                   ),
                   Text(
-                    r"$24.00",
+                    r'$' + item.dishPrice,
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 25.0,
@@ -167,10 +232,37 @@ class DishDetails extends StatelessWidget {
                   ),
                   child: Transform.rotate(
                     angle: -120.0,
-                    child: Icon(
-                      Icons.shopping_cart,
-                      color: Colors.white,
-                      size: 30.0,
+                    child: Stack(
+                      alignment: Alignment.center,
+                      children: [
+                        Icon(
+                          Icons.shopping_cart,
+                          color: Colors.white,
+                          size: 30.0,
+                        ),
+                        Positioned(
+                          top: 12.0,
+                          right: 15,
+                          child: Container(
+                            width: 20,
+                            height: 20,
+                            decoration: BoxDecoration(
+                              color: Colors.red[600],
+                              borderRadius: BorderRadius.circular(20.0),
+                            ),
+                            child: Align(
+                              alignment: Alignment.center,
+                              child: Text(
+                                "1",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          ),
+                        )
+                      ],
                     ),
                   ),
                 ),

@@ -62,7 +62,7 @@ class DishItem extends StatelessWidget {
             width: 110,
             height: 110,
             child: Image.asset(
-              item.dishImage,
+              item.dishImage[0],
               fit: BoxFit.contain,
             ),
           ),
@@ -76,7 +76,11 @@ class DishItem extends StatelessWidget {
         child: IconButton(
           iconSize: 40.0,
           onPressed: () {
-            Navigator.pushNamed(context, "/dish");
+            Navigator.pushNamed(
+              context,
+              "/dish",
+              arguments: item,
+            );
           },
           icon: Icon(
             Icons.add_circle,
