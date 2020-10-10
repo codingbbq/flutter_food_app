@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_food_app/models/list_dish.dart';
 
 class DishDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final ListOfDishes item = ModalRoute.of(context).settings.arguments;
+
     return Container(
       padding: EdgeInsets.only(
         left: 20.0,
@@ -12,7 +15,7 @@ class DishDetails extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "Mediterranean",
+            item.dishCategory,
             style: TextStyle(
               fontSize: 14.0,
               fontWeight: FontWeight.bold,
@@ -22,7 +25,7 @@ class DishDetails extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                "Quinoa Salaad",
+                item.dishName,
                 style: TextStyle(
                   fontSize: 20.0,
                   fontWeight: FontWeight.bold,
@@ -86,7 +89,7 @@ class DishDetails extends StatelessWidget {
 
           // Salaad description
           Text(
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
+            item.dishDetailedDescription,
             style: TextStyle(
               fontSize: 16.0,
               color: Colors.grey[700],
@@ -118,7 +121,7 @@ class DishDetails extends StatelessWidget {
                 width: 10.0,
               ),
               Text(
-                "25 Mins",
+                item.dishDeliveryTime,
                 style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.bold,
@@ -145,7 +148,7 @@ class DishDetails extends StatelessWidget {
                     height: 5.0,
                   ),
                   Text(
-                    r"$24.00",
+                    r'$' + item.dishPrice,
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 25.0,
